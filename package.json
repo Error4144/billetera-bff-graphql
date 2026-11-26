@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "check:config": "node --env-file=.env dist/main.js"
+    "test": "node --test tests/*.test.cjs",
+    "check:config": "node --env-file=.env dist/main.js --check-config"
   },
   "dependencies": {
     "@apollo/server": "5.5.2",

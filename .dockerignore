@@ -4,6 +4,10 @@
 !tsconfig.json
 !src/
 !src/**
+!proto/
+!proto/**
+!tests/
+!tests/**
 **/.env
 **/.env.*
 **/*.key

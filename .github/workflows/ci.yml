@@ -25,7 +25,8 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm run build
+      - run: npm test
       - name: Validar configuración de ejemplo
-        run: node --env-file=.env.example dist/main.js
+        run: node --env-file=.env.example dist/main.js --check-config
       - name: Construir imagen de verificación
         run: docker build --tag billetera-bff-graphql:ci .
